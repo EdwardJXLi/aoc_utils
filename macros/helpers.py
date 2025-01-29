@@ -125,13 +125,13 @@ def window(sequence, n=2):
         yield tuple(window)
 
 
-def parts(sequence: list, num_parts: int):
+def parts(sequence: list, n: int):
     """Splits list into n equal parts. Last parts may be smaller if list length not divisible by n.
-    >>> list(parts([1,2,3,4,5], 2)) -> [[1,2,3], [4,5]]
+    >>> list(parts([1,2,3,4,5], n=3)) -> [[1, 2], [3, 4], [5]]
     """
     # Calculate size of each part, rounding up to ensure all elements are included
-    part_size = (len(sequence) + num_parts - 1) // num_parts
-    for i in range(0, num_parts):
+    part_size = (len(sequence) + n - 1) // n
+    for i in range(0, n):
         yield sequence[i * part_size : (i + 1) * part_size]
 
 
@@ -277,7 +277,7 @@ def __test_helpers():
     assert list(window([1, 2, 3, 4], n=3)) == [(1, 2, 3), (2, 3, 4)]
 
     print("Testing parts")
-    assert list(parts([1, 2, 3, 4, 5], 2)) == [[1, 2, 3], [4, 5]]
+    assert list(parts([1, 2, 3, 4, 5], n=3)) == [[1, 2], [3, 4], [5]]
 
     print("Testing unique")
     assert not unique([1, 2, 3, 1])
