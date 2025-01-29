@@ -1,6 +1,6 @@
 # AOC (AdventOfCode) Utils
 
-Personal collection of functions & utils for [AdventOfCode](https://adventofcode.com/) that I've written, borrowed, and ~~stolen~~ over the years (since [AOC 2020](https://adventofcode.com/2020)). 
+Personal collection of functions & utils for [AdventOfCode](https://adventofcode.com/) that I've written, borrowed, and ~~stolen~~ over the years (since [AOC 2020](https://adventofcode.com/2020)), co-authored with [David Li / RandomBK](https://github.com/randombk).
 
 > **⚠️ NOTE:** Although this repo is public and open-source, it was very much designed with my personal workflow in mind. As such, it may have a bunch of caveats and "unpythonic" features that I generally wouldn't recommend in any other project. **Use at your own risk!**
 
@@ -157,8 +157,8 @@ C.D
 >>> window([1,2,3,4], n=3)
 [(1,2,3), (2,3,4)]
 
->>> parts([1,2,3,4,5], 2)
-[[1,2,3], [4,5]]
+>>> parts([1,2,3,4,5], n=3)
+[[1, 2], [3, 4], [5]]
 
 >>> cross_join([1,2], ['a','b'])
 [(1,'a'), (1,'b'), (2,'a'), (2,'b')]
