@@ -8,7 +8,7 @@ Personal collection of functions & utils for [AdventOfCode](https://adventofcode
 
 You can probably pip install this, but I personally just symlink this project into each day's solution of AdventOfCode (not great, but it works). It is also recommended to install `more_itertools`, though it is not strictly required.
 
-#### The general base template with `aoc_utils` is as follows:
+### The general base template with `aoc_utils` is as follows:
 
 ```py
 from aoc_utils import *
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
 AOC Utils comes with 100+ additional helper functions, 30+ constants, custom input parsers, graph/grid helpers, and (soon) automated cloning and submission of solutions.
 
-#### :: Input Parsing
+### :: Input Parsing
 > These are just a handful of examples. Check out all the features in [parsing.py](parsing.py)
 
 AOC Utils supports auto-zero-indexing and splitting of multiple input blocks.
@@ -59,7 +59,7 @@ g h i
 ```
 
 
-#### :: Grid/Map Parsers
+### :: Grid/Map Parsers
 > These are just a handful of examples. Check out all the features in [macros/imp.py](macros/imp.py)
 
 **[Single-Char Grids] Example Input:**
@@ -121,7 +121,7 @@ C.D
 ```
 
 
-#### :: Grid/Map Helpers
+### :: Grid/Map Helpers
 > These are just a handful of examples. Check out all the features in [macros/grid.py](macros/grid.py)
 
 ```
@@ -141,7 +141,7 @@ C.D
 (0, 3, 1, 4)  # (min_x, max_x, min_y, max_y)
 ```
 
-#### :: Helper Functions
+### :: Helper Functions
 > These are just a handful of examples. Check out all of them in [macros/helpers.py](macros/helpers.py)
 
 ```
@@ -167,7 +167,7 @@ C.D
 [1,2,3,4,5]
 ```
 
-#### :: Constants
+### :: Constants
 > These are just a handful of examples. Check out all of them in [macros/constants.py](macros/constants.py)
 
 ```
@@ -190,7 +190,7 @@ C.D
 ((0, 1, -1), (0, -1, 1), (1, 0, -1), (1, -1, 0), (-1, 0, 1), (-1, 1, 0))
 ```
 
-#### :: Algorithms
+### :: Algorithms
 > This is just a subset of the algorithms. Check out all of them in [macros/algorithms.py](macros/algorithms.py)
 
 ```
